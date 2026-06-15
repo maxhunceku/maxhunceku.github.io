@@ -700,6 +700,60 @@ a:hover {
   color: #b42318;
 }
 
+/* Conditions générales */
+.page-main {
+  padding-top: var(--header-h);
+}
+
+.section--conditions {
+  background: var(--color-surface);
+}
+
+.conditions-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 48rem;
+}
+
+.conditions-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.conditions-item:first-child {
+  padding-top: 0;
+}
+
+.conditions-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.conditions-item h2,
+.conditions-item h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--color-ink);
+}
+
+.conditions-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-ink-muted);
+}
+
+.nav-list a[aria-current="page"] {
+  color: var(--color-ink);
+}
+
+.nav-list a[aria-current="page"]::after {
+  width: 100%;
+}
+
 /* Footer */
 .site-footer {
   background: linear-gradient(135deg, #070d1a 0%, #0a0f1f 55%, #090b16 100%);
